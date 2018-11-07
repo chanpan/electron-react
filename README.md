@@ -1,5 +1,5 @@
 <h1>วิธีการติดตั้ง</h1>
-<p>git clone https://github.com/chanpan/electron-react.git react-redux</p>
+<p>git clone https://github.com/chanpan/electron-react.git</p>
 <p>cd react-redux</p>
 <p>npm install</p>
 
