@@ -32348,7 +32348,7 @@ var App = function (_Component) {
         _react2.default.createElement(
           "h1",
           null,
-          "Electron + React"
+          "Electron + React + Webpack"
         )
       );
     }

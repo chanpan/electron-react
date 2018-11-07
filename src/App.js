@@ -4,7 +4,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Electron + React</h1>
+        <h1>Electron + React + Webpack</h1>
       </div>
     );
   }
