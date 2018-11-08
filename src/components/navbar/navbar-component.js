@@ -4,7 +4,7 @@ import RenderLink from './renderLink';
 class NavbarComponent extends Component {
   render() {
     const routes = [
-      {path: '', label:'Home', currentPath:''}, 
+      {path: 'home', label:'Home', currentPath:''}, 
       {path: 'about', label:'About', currentPath:'about'}
     ]
     return (

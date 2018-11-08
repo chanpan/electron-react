@@ -10,6 +10,6 @@ class RenderLink extends Component {
         </li>) }
      </ul>
     );
-  }
+  }   
 }
 export default RenderLink; 
