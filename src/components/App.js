@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 /** routing */
 import { Route } from 'react-router-dom';
-import HomeComponent from './components/home/home-component';
-import AboutComponent from './components/about/about-component';
-import NavbarComponent from './components/navbar/navbar-component';
+import HomeComponent from './home/home-component';
+import AboutComponent from './about/about-component';
+import NavbarComponent from './navbar/navbar-component';
 
 class App extends Component {
   render() {
