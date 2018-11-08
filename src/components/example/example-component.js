@@ -1,6 +1,10 @@
 import React, { Component } from 'react';  
 import {connect} from 'react-redux';
 import { fetchUser } from '../../store/actions/example';
+
+//bootstrap
+import { ListGroup, ListGroupItem } from 'reactstrap';
+
 class ExampleComponent extends Component {
     componentDidMount(){ 
         this.props.fetchUser();
@@ -9,9 +13,14 @@ class ExampleComponent extends Component {
         const { users ,isLoading} =  this.props.users;
         
         return (
-            <div className="container">
+            <div className="">
                { isLoading && (<div>Loading...... </div>)}
-               { users && users.map( user => <div key={user.id}>{user.login}</div>)}
+               <ListGroup>
+                    { users && users.map( user => <ListGroupItem key={user.id}>{user.login}</ListGroupItem>)}
+                
+                
+                </ListGroup>
+               
             </div>
           );
       
