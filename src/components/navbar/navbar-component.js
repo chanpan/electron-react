@@ -5,7 +5,8 @@ class NavbarComponent extends Component {
   render() {
     const routes = [
       {path: 'home', label:'Home', currentPath:''}, 
-      {path: 'about', label:'About', currentPath:'about'}
+      {path: 'about', label:'About', currentPath:'about'},
+      {path: 'example', label:'ตัวอย่างการ fetch ข้อมูล', currentPath:'example'}
     ]
     return (
       <div className="Home">

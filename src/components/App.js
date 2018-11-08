@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom';
 import HomeComponent from './home/home-component';
 import AboutComponent from './about/about-component';
 import NavbarComponent from './navbar/navbar-component';
+import ExampleComponent from './example/example-component';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <NavbarComponent/>
         <Route exact={true} path="/home" component={HomeComponent} />
         <Route exact={true} path="/about" component={AboutComponent} />
+        <Route exact={true} path="/example" component={ExampleComponent} />
       </div>
     );
   }
