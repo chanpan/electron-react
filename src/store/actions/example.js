@@ -1,19 +1,20 @@
 import axios from 'axios';
 import config from '../../config/config';  //import config ต่างๆ เช่น url 
+import {FETCH_EXAMPLE} from '../constant';
 const URL = config.MOCK_URL;
 
 //ตัวอย่าง การ fetch ข้อมูลแบบ get
 export const fetchUser = () => {
     return dispatch => {
-        dispatch({ type: 'FETCH_EXAMPLE_LOADING' });
+        dispatch({ type:  FETCH_EXAMPLE.LOADING});
         return axios
             .get(`${URL}`, {})
             .then(res => {
                 //console.log(res.data);
-                dispatch({ type: 'FETCH_EXAMPLE_SUCCESS', payload: res.data });
+                dispatch({ type: FETCH_EXAMPLE.SUCCESS, payload: res.data });
             })
             .catch(err => {
-                dispatch({ type: 'FETCH_EXAMPLE_ERROR', payload: res.message });
+                dispatch({ type: FETCH_EXAMPLE.ERROR, payload: res.message });
             });
     }
 }
