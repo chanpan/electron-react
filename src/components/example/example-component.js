@@ -9,7 +9,7 @@ class ExampleComponent extends Component {
         const { users ,isLoading} =  this.props.users;
         
         return (
-            <div className="user">
+            <div className="container">
                { isLoading && (<div>Loading...... </div>)}
                { users && users.map( user => <div key={user.id}>{user.login}</div>)}
             </div>

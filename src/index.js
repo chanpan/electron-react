@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
+/** bootstrap and css */
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 /** routing */
 import { HashRouter } from 'react-router-dom';
 import { AppContainer } from 'react-hot-loader';
